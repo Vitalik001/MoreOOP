@@ -14,22 +14,22 @@ This workflow performs the following steps:
 
 ## Task
 Implement the heroes game in text mode
-- class Character 
+- class Characters.Character 
   - attributes: int power, in hp
-  - methods: void kick(Character c), boolean isAlive()
-- class Hobbit 
+  - methods: void kick(Characters.Character c), boolean isAlive()
+- class Characters.Hobbit 
   - attributes: int power=0, int hp=3
-  - methods: void kick(Character c) { toCry() }
-- class Elf 
+  - methods: void kick(Characters.Character c) { toCry() }
+- class Characters.Elf 
    - attributes: int power=10, int hp=10
-   - methods: void kick(Character c) { kill everybody weaker than him, otherwise decrease the power of character by 1 }
-- class King 
+   - methods: void kick(Characters.Character c) { kill everybody weaker than him, otherwise decrease the power of character by 1 }
+- class Characters.King 
    - attributes: int power=from 5 to 15, int hp=from 5 to 15 
-   - methods: void kick(Character c) { decrease number of hp of the enemy by random number which will be in the range of his power }
-- class Knight 
+   - methods: void kick(Characters.Character c) { decrease number of hp of the enemy by random number which will be in the range of his power }
+- class Characters.Knight 
    - attributes: int power=from 2 to 12, int hp=from 2 to 12
-   - methods: void kick(Character c) { like King }
-- class CharacterFactory 
-   - methods: Character createCharacter() { returns random instance of any existing character } 
-- class GameManager
-   - methods: void fight(Character c1, Character c2) { to provide fight between to characters and explain via command line what happens during fight, till both of the characters are alive } 
+   - methods: void kick(Characters.Character c) { like Characters.King }
+- class Characters.CharacterFactory 
+   - methods: Characters.Character createCharacter() { returns random instance of any existing character } 
+- class Characters.GameManager
+   - methods: void fight(Characters.Character c1, Characters.Character c2) { to provide fight between to characters and explain via command line what happens during fight, till both of the characters are alive } 
