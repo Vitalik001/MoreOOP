@@ -28,4 +28,12 @@ public class Character {
     public boolean isAlive(){
         return getHp()>0;
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "hp=" + hp +
+                ", power=" + power +
+                '}';
+    }
 }

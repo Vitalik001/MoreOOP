@@ -6,11 +6,11 @@ public class Elf extends Character {
     }
     @Override
     public void kick(Character c){
-        if (GetHp()<c.GetHp()){
-            c.SetHp(0);
+        if (getHp()>c.getHp()){
+            c.setHp(0);
         }
         else{
-            SetPw(GetPower()-1);
+            setPw(getPower()-1);
         }
     }
 }

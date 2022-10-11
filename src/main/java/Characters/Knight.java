@@ -9,6 +9,6 @@ public class Knight extends Character {
     }
     @Override
     public void kick(Character c){
-        c.SetHp(GetHp()-new Random().nextInt(c.GetPower()));
+        c.setHp(getHp()-new Random().nextInt(c.getPower()));
     }
 }
